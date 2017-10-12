@@ -1,7 +1,7 @@
 zuul:
   routes:
-    helloworld:
+    sample:
       path: /client/**
       serviceId: sample
 server:
-  port: 8082
+  port: 8080
