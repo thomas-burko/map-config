@@ -1,7 +1,2 @@
-zuul:
-  routes:
-    helloworld:
-      path: /client/**
-      serviceId: helloworld
 server:
   port: 8080
