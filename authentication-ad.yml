@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: map-authentication
+
+map:
+  anecon-tenant-id: a3196458-5d3a-4275-bae6-54ed794b2051
+  oauth2:
+    scope: Microsoft.Azure.ActiveDirectory # for spring client only
+    ad-url: https://login.microsoft.com/${map.anecon-tenant-id}/oauth2/token # for spring client only
+    authority: https://login.microsoftonline.com/${map.anecon-tenant-id} # for adal4j client only
+    clientid: 3e7751fc-7063-42de-b66c-8c6fbdb74898
+    resource: 3e7751fc-7063-42de-b66c-8c6fbdb74898 # same as client id. check if something else is possible 
+  ad-discovery-keys-url: https://login.microsoftonline.com/common/discovery/keys
